@@ -1,23 +1,18 @@
-// script.js
-
-const toggle = document.querySelector(".theme-toggle");
-const root = document.documentElement;
-
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-
-  // Armazena a preferência no localStorage
-  if (document.body.classList.contains("light")) {
-    localStorage.setItem("theme", "light");
-  } else {
-    localStorage.setItem("theme", "dark");
-  }
+// Animação suave na rolagem
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 });
 
-// Aplica o tema salvo ao carregar a página
-window.addEventListener("DOMContentLoaded", () => {
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "light") {
-    document.body.classList.add("light");
-  }
+// Efeito glow na foto ao passar o mouse
+const profileImg = document.querySelector(".profile-img");
+profileImg.addEventListener("mouseenter", () => {
+  profileImg.style.boxShadow = "0 0 25px rgba(155, 93, 240, 0.9)";
+});
+profileImg.addEventListener("mouseleave", () => {
+  profileImg.style.boxShadow = "0 0 15px rgba(122, 63, 240, 0.6)";
 });
