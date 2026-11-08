@@ -1,18 +1,18 @@
-// Animação suave na rolagem
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
+document.addEventListener("DOMContentLoaded", () => {
+  // Ano atual no rodapé
+  document.getElementById("ano").textContent = new Date().getFullYear();
 
-// Efeito glow na foto ao passar o mouse
-const profileImg = document.querySelector(".profile-img");
-profileImg.addEventListener("mouseenter", () => {
-  profileImg.style.boxShadow = "0 0 25px rgba(155, 93, 240, 0.9)";
-});
-profileImg.addEventListener("mouseleave", () => {
-  profileImg.style.boxShadow = "0 0 15px rgba(122, 63, 240, 0.6)";
+  if (!("IntersectionObserver" in window)) return;
+
+  // Destaca no menu a seção que está no meio da tela
+  const links = document.querySelectorAll(".nav-links a");
+  const observador = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      links.forEach(link => {
+        link.classList.toggle("active", link.getAttribute("href") === "#" + entry.target.id);
+      });
+    });
+  }, { rootMargin: "-45% 0px -50% 0px" });
+  document.querySelectorAll("main section[id]").forEach(secao => observador.observe(secao));
 });

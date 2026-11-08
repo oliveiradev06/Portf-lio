@@ -3,56 +3,295 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - João Pedro</title>
+  <title>João Pedro Oliveira | Engenharia de IA e Dados</title>
+  <meta name="description" content="Portfólio de João Pedro Oliveira, estudante de Ciência da Computação na USCS com foco em Engenharia de IA e Dados. Projetos com Python, pandas, scikit-learn, LLMs, FastAPI e Next.js.">
+  <meta name="theme-color" content="#0d0a16">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="João Pedro Oliveira | Engenharia de IA e Dados">
+  <meta property="og:description" content="Projetos de IA, dados e desenvolvimento web: do dado bruto até a tela que alguém usa no dia a dia.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Seção Hero -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Olá, eu sou o João 😉</h2>
-      <p class="role">Desenvolvedor Python</p>
-      <span class="badge">Foco em Análise de Dados</span>
-      <div class="buttons">
-        <a href="curriculo/João Pedro - Currículo.pdf" class="btn btn-primary" download>Download CV</a>
-        <a href="#contato" class="btn btn-outline">Entrar em contato</a>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Topo -->
+  <header class="topbar">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a href="#inicio" class="logo">João<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- Seção Hero -->
+    <section class="hero container" id="inicio">
+      <div class="hero-text">
+        <span class="badge">Foco em Engenharia de IA e Dados</span>
+        <h1>Olá, eu sou o João 😉</h1>
+        <p class="role">Estudante de Ciência da Computação na USCS</p>
+        <p class="hero-desc">
+          Cheguei na IA pelo caminho dos dados. Antes de treinar qualquer modelo, é preciso entender,
+          limpar e preparar o que vai entrar nele. Gosto de projeto de ponta a ponta: do dado bruto
+          até a tela que alguém usa no dia a dia.
+        </p>
+        <div class="buttons">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="curriculo/curriculo-joao-pedro.pdf" class="btn btn-outline" download="Curriculo - Joao Pedro Oliveira.pdf">Download CV</a>
+        </div>
+        <ul class="hero-links">
+          <li><a href="https://github.com/oliveiradev06" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-guilherme-8bab09343" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="mailto:oliveiradev06@gmail.com">oliveiradev06@gmail.com</a></li>
+        </ul>
       </div>
-    </div>
-    <img src="img/img.jfif" alt="Foto de João Pedro, desenvolvedor Python" class="profile-img" />
-  </section>
+      <div class="hero-photo">
+        <img src="img/joao.jpg" alt="Foto de João Pedro Oliveira" class="profile-img" width="460" height="460">
+      </div>
+    </section>
 
-  <!-- Seção Projetos -->
-  <section id="projetos">
-    <h3 class="section-title">📂 Projetos</h3>
-    <div class="projects-grid">
-      <!-- Projeto 1 -->
-      <div class="card">
-        <h4>📊 Análise de Salários</h4>
-        <p>Análise exploratória dos salários de colaboradores ao longo dos anos, utilizando Python, Pandas e Jupyter Notebook.</p>
-        <a href="https://github.com/oliveiradev06/-Analise-de-Salarios-na-Area-de-Dados" target="_blank" class="btn btn-primary">Ver Projeto</a>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">Sobre mim</p>
+        <h2 class="section-title">Dados primeiro, modelo depois</h2>
+      </div>
+      <div class="about">
+        <div class="about-text">
+          <p>
+            Curso Ciência da Computação na USCS, em São Caetano do Sul, e estou estagiando enquanto estudo.
+            Meu foco é Engenharia de IA: machine learning e aplicação de modelos em problemas reais.
+          </p>
+          <p>
+            Nos meus projetos eu separo bem os papéis: cálculo e regra ficam no código, onde dá para testar
+            e conferir, e o modelo de linguagem entra para interpretar e explicar. Todo número que aparece
+            na tela precisa ter uma origem que eu consiga mostrar.
+          </p>
+        </div>
+        <ul class="facts">
+          <li>
+            <span class="fact-label">Graduação</span>
+            <strong>Ciência da Computação</strong>
+            <span>USCS · 2025 a 2028</span>
+          </li>
+          <li>
+            <span class="fact-label">Técnico</span>
+            <strong>SENAI</strong>
+            <span>Destaque em CLP</span>
+          </li>
+          <li>
+            <span class="fact-label">Idiomas</span>
+            <strong>Inglês intermediário</strong>
+            <span>Fisk, cursando</span>
+          </li>
+          <li>
+            <span class="fact-label">Local</span>
+            <strong>São Caetano do Sul</strong>
+            <span>São Paulo</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">Projetos</p>
+        <h2 class="section-title">O que eu já construí</h2>
+        <p class="section-sub">Todos com código aberto no GitHub.</p>
       </div>
 
-      <!-- Projeto 2 -->
-      <div class="card">
-        <h4>🛒 Impacto da COVID-19 no Comércio</h4>
-        <p>Estudo sobre os efeitos da pandemia no comércio de mercadorias, utilizando dados públicos e bibliotecas de análise de dados em Python.</p>
-        <a href="https://github.com/oliveiradev06/dados-covid19" target="_blank" class="btn btn-primary">Ver Projeto</a>
+      <!-- Destaque 1 -->
+      <article class="feature">
+        <a class="feature-media browser" href="https://github.com/oliveiradev06/OPEN-FINANCE-INTELLIGENCE" target="_blank" rel="noopener" aria-label="Abrir o OpenFinance Intelligence no GitHub">
+          <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <img src="img/projetos/openfinance-inicio.webp" alt="Tela inicial do OpenFinance Intelligence, com indicadores da carteira e gráficos de oportunidades" width="1200" height="917" loading="lazy">
+        </a>
+        <div class="feature-body">
+          <p class="kicker">Full stack · Dados · Machine learning</p>
+          <h3>💳 OpenFinance Intelligence</h3>
+          <p class="feature-desc">
+            Plataforma para analistas de banco que junta os dados de Open Finance de cada cliente (contas,
+            cartões, investimentos e empréstimos em várias instituições) e aponta oportunidades comerciais,
+            sempre com a explicação de cada número.
+          </p>
+          <ul class="highlights">
+            <li>5 mil clientes sintéticos e cerca de 500 mil transações, com ETL que gera umas 80 features por cliente</li>
+            <li>Motor com 7 regras de oportunidade: cada ponto do score é rastreável até um dado do cliente</li>
+            <li>Segmentação com KMeans e detecção de anomalias com Isolation Forest</li>
+            <li>IA que só explica fatos já calculados, sem receber nome nem ID do cliente, com LGPD, perfis de acesso e auditoria</li>
+            <li>37 testes no backend e CI no GitHub Actions em SQLite e PostgreSQL</li>
+          </ul>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>FastAPI</li><li>PostgreSQL</li><li>pandas</li><li>scikit-learn</li><li>Next.js</li><li>TypeScript</li><li>Tailwind</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/oliveiradev06/OPEN-FINANCE-INTELLIGENCE" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Ver no GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Destaque 2 -->
+      <article class="feature reverse">
+        <figure class="feature-media pipeline">
+          <figcaption class="pipeline-title">Como o sistema decide</figcaption>
+          <ol class="flow">
+            <li>
+              <span class="step">01</span>
+              <strong>Limpeza em pandas</strong>
+              <small>duplicatas, datas nulas e conversão de USD para BRL</small>
+            </li>
+            <li>
+              <span class="step">02</span>
+              <strong>Regras determinísticas</strong>
+              <small>317 operações e 30 clientes: 4 fracionamentos e 21 valores atípicos</small>
+            </li>
+            <li class="llm">
+              <span class="step">03</span>
+              <strong>Agente LLM com ferramentas</strong>
+              <small>escolhe o que consultar em cada caso; as ferramentas também rodam via MCP</small>
+            </li>
+            <li class="llm">
+              <span class="step">04</span>
+              <strong>Parecer de risco</strong>
+              <small>10 clientes, ~42 mil tokens, US$ 0,011 estimado no lote</small>
+            </li>
+          </ol>
+        </figure>
+        <div class="feature-body">
+          <p class="kicker">IA aplicada · Agentes · PLD</p>
+          <h3>🔎 Case PLD: triagem antilavagem com LLM</h3>
+          <p class="feature-desc">
+            Case técnico de processo seletivo para estágio em Engenharia de IA. Regras em pandas detectam
+            padrões suspeitos nas operações, e um LLM redige o parecer de risco dos clientes sinalizados.
+            Cálculo é código; interpretação e redação são do modelo.
+          </p>
+          <ul class="highlights">
+            <li>A limpeza muda o veredito: sem deduplicar, um cliente seria acusado de fracionamento por uma operação contada duas vezes</li>
+            <li>Agente que decide quais ferramentas usar e servidor MCP que expõe essas mesmas funções para qualquer cliente</li>
+            <li>Confronto regra × agente analisado caso a caso, incluindo onde o modelo errou números, o que reforça que todo valor precisa ser conferido em código</li>
+          </ul>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>pandas</li><li>Jupyter</li><li>LLM</li><li>Agentes</li><li>MCP</li>
+          </ul>
+          <div class="card-links">
+            <a href="https://github.com/oliveiradev06/case-PLD" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Ver no GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <h3 class="subhead">Outros projetos</h3>
+      <div class="projects-grid">
+        <article class="card">
+          <div class="card-top"><span class="card-icon" aria-hidden="true">🔐</span></div>
+          <h4>Fullstack Auth</h4>
+          <p>
+            Cadastro e login com JWT, com o backend separado em camadas no estilo Clean Architecture
+            (domínio, casos de uso, infraestrutura e interfaces). Banco, API e front sobem com um
+            <code>docker compose up</code>.
+          </p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>React</li><li>Tailwind</li><li>Node.js</li><li>Express</li><li>Prisma</li><li>MySQL</li><li>Docker</li>
+          </ul>
+          <a href="https://github.com/oliveiradev06/tarefa-sexta" target="_blank" rel="noopener" class="card-link">Ver projeto →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="card-icon" aria-hidden="true">📊</span></div>
+          <h4>Análise de Salários na Área de Dados</h4>
+          <p>
+            Salários em tecnologia por senioridade, tipo de contrato e modalidade de trabalho: limpeza,
+            tratamento e visualização com gráficos estáticos e interativos.
+          </p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>pandas</li><li>Seaborn</li><li>Plotly</li>
+          </ul>
+          <a href="https://github.com/oliveiradev06/-Analise-de-Salarios-na-Area-de-Dados" target="_blank" rel="noopener" class="card-link">Ver projeto →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-icon" aria-hidden="true">🛒</span>
+            <span class="status">Em andamento</span>
+          </div>
+          <h4>Impacto da COVID-19 no Comércio</h4>
+          <p>
+            Efeitos da pandemia no comércio de mercadorias por país, produto e meio de transporte,
+            usando dados públicos de importação e exportação.
+          </p>
+          <ul class="tags" aria-label="Tecnologias">
+            <li>Python</li><li>pandas</li><li>Plotly</li><li>Jupyter</li>
+          </ul>
+          <a href="https://github.com/oliveiradev06/dados-covid19" target="_blank" rel="noopener" class="card-link">Ver projeto →</a>
+        </article>
       </div>
+    </section>
+
+    <!-- Seção Tecnologias -->
+    <section id="tecnologias" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">Tecnologias</p>
+        <h2 class="section-title">Com o que eu trabalho</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-group">
+          <h3>Linguagens</h3>
+          <ul class="chips">
+            <li>Python</li><li>SQL</li><li>TypeScript</li><li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="tech-group">
+          <h3>Dados e IA</h3>
+          <ul class="chips">
+            <li>pandas</li><li>NumPy</li><li>scikit-learn</li><li>Jupyter</li><li>Matplotlib</li><li>Seaborn</li><li>Plotly</li><li>LLMs e agentes</li><li>MCP</li>
+          </ul>
+        </div>
+        <div class="tech-group">
+          <h3>Back-end e web</h3>
+          <ul class="chips">
+            <li>FastAPI</li><li>Node.js</li><li>Express</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Streamlit</li>
+          </ul>
+        </div>
+        <div class="tech-group">
+          <h3>Banco e ferramentas</h3>
+          <ul class="chips">
+            <li>PostgreSQL</li><li>MySQL</li><li>Prisma</li><li>Docker</li><li>Git</li><li>GitHub Actions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section container">
+      <div class="contact-card">
+        <p class="eyebrow">Contato</p>
+        <h2 class="section-title">Vamos conversar?</h2>
+        <p>Estou aberto a oportunidades, feedback e troca de ideia sobre IA e dados. Fique à vontade para me chamar! 🚀</p>
+        <div class="social-buttons">
+          <a href="mailto:oliveiradev06@gmail.com" class="btn btn-primary">E-mail</a>
+          <a href="https://wa.me/5511985905525" target="_blank" rel="noopener" class="btn btn-outline">WhatsApp</a>
+          <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-guilherme-8bab09343" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+          <a href="https://github.com/oliveiradev06" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="ano">2026</span> João Pedro Oliveira</p>
+      <p>Feito com HTML, CSS e JavaScript</p>
     </div>
-  </section>
-
-  <!-- Seção Contato -->
-  <section id="contato" class="contato">
-    <h3>Entre em contato</h3>
-    <p>Fique à vontade para me chamar! 🚀</p>
-
-    <div class="social-buttons">
-      <a href="https://wa.me/5511985905525" target="_blank" class="btn btn-primary">📱 WhatsApp</a>
-      <a href="https://github.com/oliveiradev06" target="_blank" class="btn btn-outline">🐙 GitHub</a>
-      <a href="https://www.linkedin.com/in/joão-pedro-guilherme-8bab09343" target="_blank" class="btn btn-outline">💼 LinkedIn</a>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+  </footer>
 </body>
 </html>
