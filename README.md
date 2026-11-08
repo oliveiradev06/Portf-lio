@@ -36,5 +36,4 @@ script.js                  destaque do menu e ano do rodapé
 img/joao.jpg               foto de perfil
 img/favicon.svg            ícone da aba
 img/projetos/              prints dos projetos
-curriculo/                 currículo em PDF
 ```
